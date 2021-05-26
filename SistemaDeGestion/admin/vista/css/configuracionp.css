@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: opx;
+}
+body{
+    background: #444;
+    color: #000;
+}
+#contenedor {
+    width: 1400px;
+    
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+header{
+    height: 203px;
+    background: #CCD1D1;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+#contenido{
+    
+    width: 1400px;
+    background: white;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+footer{
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: 200%;
+    background: #CCD1D1;
+    text-align: center;
+
+}
+
+
+img {
+    width: 1400px;
+    height: 150px;
+    background: #000;
+    border-radius: 10px 10px 0 0;
+}
+
+nav{
+    height: 30px;
+    
+}
+
+/*tabla estilo*/
+table{
+    text-align: center;
+    background-color: #ECF0F1;
+   margin: auto;
+   overflow:scroll;
+    border-collapse: collapse;
+    width: 90%;
+    height: 40%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    
+}
+th, td{
+    
+    padding: 10px;
+}
+th{
+    background-color: #8E44AD;
+    border-bottom: solid 5px white;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover{
+    background-color: #8E44AD ;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8e8e8;
+}
+
+
+nav.menu{
+   list-style: none; 
+   padding: 0;
+   background: #092327;
+   width: 30%;
+   max-width: 1000%;
+   margin: auto;
+  
+}
+
+.menu li a{
+    text-decoration: none;
+   
+    color: white;
+    
+    padding: 13px;
+    display: block;
+    
+
+}
+.menu li{
+display: inline-block;
+text-align: center;
+background-color: #A569BD;
+border-radius: 5px 5px 5px 5px;
+
+}
+.menu li :hover{
+    background: #fff;
+    border-radius: 5px 5px 5px 5px;
+    color: #000;
+}
+td a{
+
+border-radius: 7px 7px 7px 7px;
+text-decoration: none;
+background: #EFD65A;
+color: #000;
+}
+
+td a:hover{
+    
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    color: #000; 
+}
+#addtelefono{
+    border: #000;
+    margin: auto;
+    width: 100px;
+ 
+    margin-bottom: 10px;   
+}
+/*Ssection telefono*/
+#addtelefono a{
+    background: #EFD65A;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px 5px 5px 5px;
+    
+    border-bottom: black;
+     
+}
+
+
+
+.center img{
+    
+    width: 20vw;
+    height: 25vh;
+}
+
+.center{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+

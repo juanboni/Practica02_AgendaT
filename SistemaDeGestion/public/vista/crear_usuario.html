@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../admin/vista/css/estiloslogin.css">
+        <script type="text/javascript" src="validaciones.js"></script>
+        <style type="text/css">
+        .error{
+            color:red;
+            font-size: 8px;
+        }
+
+        </style>
+    </head>
+    <body>
+        
+    <form class="formulario" id="formulario01" method="POST" action="../controladores/crear_usuario.php" onsubmit="return validarCamposObligatorios()">
+        <h1>Registrate</h1>
+        <div class="input-contenedor">
+        <label for="cedula">Cedula</label>
+        <input type="text" id="cedula" name="cedula" value="" placeholder="ingrese el numero de cedula" required oninput="return validarCedula(this)" onkeyup="return validarNumero(this)"/>
+        <span id="mensajeCedula" class="error"></span>
+    </div>
+
+        <div class="input-contenedor">
+         <label for="nombres">Nombres</label>
+         <input type="text" id="nombres" name="nombres" value="" placeholder="ingrese sus dos nombres...." required oninput ="return validarLetras(this)"  onkeyup="return validarNombres(this)"/>
+         <span id="mensajeNombre" class="error"></span>
+        </div>
+
+        <div class="input-contenedor">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" value="" placeholder="ingrese sus dos apellidos..." required oninput="return validarLetras(this)" onkeyup="return validarapellidos(this)"/>
+        <span id="mensajeApellido" class="error"></span>
+    </div>
+
+        <div class="input-contenedor">
+        <label for="direccion">Direccion</label>
+        <input type="text" id="direccion" name="direccion" value="" placeholder="ingrese su direccion..." required/>
+        
+    </div>
+        
+
+        
+        <div class="input-contenedor">
+            <label for="fecha">Fecha Nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="ingrese su fecha de nacimiento..." required/>
+        </div>
+
+        <div class="input-contenedor">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" value="" placeholder="ingrese su correo electronico..." required oninput="return validarCorreo(this)"/>
+        <span id="mensajeEmail" class="error"></span>
+        </div>
+
+        <div class="input-contenedor">
+        <label for="contrasena">Contrasena</label>
+        <input type="password" id="contrasena" name="contrasena" value="" placeholder="ingrese su contrasena..." required oninput="return validarcontrasena(this)"/>
+        <span id="mensajePassword" class="error"></span>
+        </div>
+        
+        <input type="submit" id="crear" name="crear" value="Aceptar"  class="button"/>
+        <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+        <p>¿si no deaseas registrarte puedes regresar ? <a class="link" href="../vista/login.html">Login</a></p>
+    </div>
+    </form>
+    </body>
+</html>

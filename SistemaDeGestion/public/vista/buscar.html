@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="buscar.js" ></script>
+        <script type="text/javascript" src="buscarc.js" ></script>
+        <title>Buscar Persona</title>
+        <link href="../../admin/vista/css/estilos.css" rel="stylesheet" />
+    </head>
+    <body> 
+        <div id="contenedor">
+            <header>
+        
+                <a href="ct_start.html"><img src="../../admin/vista/img/logot.png" alt="Curbside Thai" /></a>
+                
+              <h1>Agenda Telefonica</h1>
+             </header>
+
+             <section id="contenido">
+                <div class="centert">
+                    <img src="../../admin/vista/img/telefono.jpeg" alt="Curbside Thai" />
+                </div>
+                <form  class="form_search" onsubmit="return buscarPorCedula()" action="../controladores/buscar.php" method="POST">
+        <input type="text" id="cedula" name="cedula" value="">
+        <input class ="btn_search" type="button" id="buscar" name="buscar" value="buscar" onclick="buscarPorCedula()" >
+        </form>
+        <div id="informacion"><b>Datos de la persona</b></div>
+        <br>
+        <form onsubmit="return buscarPorCorreo()" action="../controladores/buscarc.php" method="POST">
+            <input type="text" id="correo" name="correo" value="">
+            <input type="button" id="buscarc" name="buscarc" value="buscarc" onclick="buscarPorCorreo()" >
+            </form>
+            <br>
+        
+        <div id="informacionco"><b>Datos de la persona por correo</b></div>
+
+        <br>
+        <a href="../vista/login.html">salir</a>
+        </section>
+
+        <footer>
+            <p>Publicado por: Juan Boni ,Janeth Matute</p>
+             <p>informacion de contacto: <a href="mailto:TastyPoke@gmail.com">
+            TastyPoke@gmail.com</a>.</p>
+            
+            <p>Call: <a href=”tel:+593984969689”>984969689</a></p>
+             <p>copyright &copy;Todos los derechos reservados</p>
+            </footer>
+           </section>
+       </div>
+      
+    </body>
+</html>
